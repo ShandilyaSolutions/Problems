@@ -7,39 +7,35 @@ class Box{
         int l,b,h;
 
     // Constructors : 
+    public:
+        Box(){
+            //Default constructor initializing each variable with 0
+            l=0;
+            b=0;
+            h=0;
+        }
 
-    Box(){
-        //Default constructor initializing each variable with 0
-        l=0;
-        b=0;
-        h=0;
-    }
+        Box(int x, int y, int z){
+            l=x;
+            b=y;
+            h=z;
+        }
 
-    Box(int x, int y, int z){
-        l=x;
-        b=y;
-        h=z;
-    }
+        void getLength(){
+            cout<<"Length : "<<l<<endl;
+        }
 
-    
-    int getLength(){
-        cout<<"Length : "<<l<<endl;
-        return 0;
-    }
+        void getBreadth(){
+            cout<<"Breadth : "<<b<<endl;
+        }
 
-    int getBreadth(){
-        cout<<"Breadth : "<<b<<endl;
-        return 0;
-    }
+        void getHeight(){
+            cout<<"Height : "<<h<<endl;
+        }
 
-    int getHeight(){
-        cout<<"Height : "<<h<<endl;
-        return 0;
-    }
-
-    int CalculateVolume(){
-        return (l*b*h);
-    }
+        void CalculateVolume(){
+            cout<<"Volume of the Box is "<<(l*b*h)<<" cubic units."<<endl;
+        }
 };
 
 int main(){
@@ -53,8 +49,8 @@ int main(){
     cin>>H;
     Box obj2(L,B,H);
     obj2.getLength();
-    obj2.getHeight();
     obj2.getBreadth();
+    obj2.getHeight();
     obj2.CalculateVolume();
     return 0;
 }
