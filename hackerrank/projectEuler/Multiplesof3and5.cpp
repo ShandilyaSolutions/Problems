@@ -3,21 +3,10 @@ using namespace std;
 
 void calculateSum(int n)
 {
-    int i,j,sum=0;
-    for(i=3;i<n;i+=3)
-    {
-        if(i%5==0)
-            continue;
-        //cout<<i<<" ";
-      sum=sum+i;
-    }
-
-    for(j=5;j<n;j+=5){
-        //cout<<j<<" ";
-        sum=sum+j;
-    }
-    //cout<<endl;
-    cout<<sum<<endl;
+    // int i=0,j=1,sum=0;
+    /*
+    sum = So+Se;   
+    cout<<sum<<endl; */
 }
 
 int main()
