@@ -15,6 +15,10 @@ def solution(num):
             for j in range(0, (char_count[i] // 2), 1):
                 final += str(i)
 
+        elif char_count[i]>1 & char_count[i] % 2 != 0:
+            char_count[i] -= 2
+            final += str(i)
+
     other_half = final
 
     for i in range(9, -1, -1):
