@@ -9,7 +9,7 @@ Largest Palindrome Number program in python :
 """
 
 
-def solutin(num):
+def solution(num):
     largePalindrome = ''
     char_count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
